@@ -1,0 +1,79 @@
+/* General container styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Form elements styling */
+  form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Input fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Submit button */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(12, 12, 11);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .input-container {
+      padding: 15px;
+    }
+  
+    input {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
