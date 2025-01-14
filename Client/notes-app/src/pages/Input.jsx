@@ -3,6 +3,7 @@ import { useState } from 'react'
 import '../styles/notepage.css'
 import Note from '../components/note'
 import Home from './Home'
+import { useNavigate } from 'react-router-dom'
 function Input() {
     const [input,setInput]=useState({title:"",content:""});
     function handleChange(e) {
@@ -17,8 +18,12 @@ function Input() {
         headers:{
           "Content-Type":"application/json"}
       });
-      e.Home();
+      
         
+    }
+    const navigate=useNavigate();
+    function gotonewpage(){
+        navigate('/');
     }
   return (
     <div className='input-container'>
@@ -29,7 +34,7 @@ function Input() {
           <p>Content</p>
           <input  onChange={handleChange} type="text"  name="content"  placeholder='Content' value={input.content}/>   
             
-          <button type="submit">AddNote</button> 
+          <button onClick={()=>gotonewpage()} type="submit">AddNote</button> 
       </form>
     </div>
   )
