@@ -4,6 +4,7 @@
     margin: 10px;
     width: 90%;
     margin-top: 20px;
+    border-radius: 20px;
 }
 .note-container h3{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  
@@ -23,4 +24,21 @@
     -webkit-box-shadow: 7px 7px 17px 0px rgba(174,181,181,1);
 -moz-box-shadow: 7px 7px 17px 0px rgba(174,181,181,1);
 box-shadow: 7px 7px 17px 0px rgba(174,181,181,1);
+}
+.buttons{    
+    display: flex;    
+    gap:10px;
+    margin-left: 65%;
+}
+.buttons #delete,#update{
+  position: relative;
+padding: 3px;
+
+
+background-color: white;
+color: black;
+}
+
+.note-container button:hover{
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.4);
 }
