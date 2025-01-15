@@ -8,7 +8,7 @@ function Home() {
   const [note,setNote]=useState([]);
   useEffect(() => {
     const getUserdata= async()=>{
-      const response=await fetch("http://localhost:8080/getdata");
+      const response=await fetch("https://notes-app-hm4q.onrender.com/getdata");
       const data=await response.json();
       setNote(data);
     }

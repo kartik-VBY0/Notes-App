@@ -6,7 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 function Note(props) {
     const navigate=useNavigate();
     async function deletenote(){
-        const response=await fetch("http://localhost:8080/deletedata",{
+        const response=await fetch("https://notes-app-hm4q.onrender.com/deletedata",{
             method:"DELETE",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({

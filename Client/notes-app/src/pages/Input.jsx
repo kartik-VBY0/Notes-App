@@ -12,7 +12,7 @@ function Input() {
     }
     
     async function handleSubmit(e) {
-      const response=await fetch("http://localhost:8080/adddata",{
+      const response=await fetch("https://notes-app-hm4q.onrender.com/adddata",{
         method:"POST",
         body:JSON.stringify(input),
         headers:{
